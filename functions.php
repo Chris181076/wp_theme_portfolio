@@ -89,3 +89,8 @@ function enqueue_lightbox_assets()
 }
 add_action('wp_enqueue_scripts', 'enqueue_lightbox_assets');
 
+function wp_theme_portfolio_enqueue_styles() {
+    wp_enqueue_style('theme-style', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'wp_theme_portfolio_enqueue_styles');
+
